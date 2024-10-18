@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة منتوج</title>
+    <link rel="stylesheet" href="./style/addProduct.css">
+    <link rel="icon" href="../logo/logo_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="div_menu">
+        <a class="return" onclick="goback()">
+            <img src="../icones/goRight.png" class="iconReturn">
+        </a>
+        <div class="div_icons">
+          <img class="logo" src="../logo/logo.png" alt="">
+        </div>
+    </div>
+    <div class="bodyForm">
+        <div class="bodyForm_center">
+            <div class="titleForm">إضافة منتوج</div>
+            <div class="message">
+                <div class="message_center" id="messageInfo"></div>
+            </div>
+            <div class="placeInput">
+                <div class="placeInput_center">
+                    <select name="categorie" id="categorie">
+                        <option value="null">الصنف</option>
+                        <option value="chaussure">Chaussure</option>
+                        <option value="eges">Eges</option>
+                        <option value="bottes">Bottes</option>
+                        <option value="spadriers">Spadriers</option>
+                        <option value="sacs">Sacs</option>
+                        <option value="sabots">Sabots</option>
+                        <option value="pantoufles">Pantoufles</option>
+                    </select>
+                </div>
+            </div>
+            <div class="placePrice">
+                <div class="placePrice_center">
+                    <input type="number" placeholder="الثمن" class="inp" id="price">
+                </div>
+                <div class="placePrice_center">
+                    <input type="number" placeholder="الثمن قبل التخفيض" class="inp" id="priceAvant">
+                </div>
+            </div>
+            <div class="placeDescription">
+                <div class="placeDescription_center"><textarea class="inp descripInp" placeholder="الوصف" id="description"></textarea></div>
+            </div>
+            <div class="showImge">
+                <label class="showImgeitem" for="clickInpu1"><img src="../icones/addproduct.png" class="imgAddProduct" id="imgShow1"></label>
+                <label class="showImgeitem" for="clickInpu2"><img src="../icones/addproduct.png" class="imgAddProduct" id="imgShow2"></label>
+                <label class="showImgeitem" for="clickInpu3"><img src="../icones/addproduct.png" class="imgAddProduct" id="imgShow3"></label>
+                <label class="showImgeitem" for="clickInpu4"><img src="../icones/addproduct.png" class="imgAddProduct" id="imgShow4"></label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu1">إضافة الصورة الاولى</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu2">إضافة الصورة التانية</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu3">إضافة الصورة الثالتة</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu4">إضافة الصورة الرابعة</label>
+            </div>
+            <div class="showImge">
+                <label class="showImgeitem" for="clickInpu1"><img src="../icons/addproduct.png" class="imgAddProduct" id="imgShow1"></label>
+                <label class="showImgeitem" for="clickInpu2"><img src="../icons/addproduct.png" class="imgAddProduct" id="imgShow2"></label>
+                <label class="showImgeitem" for="clickInpu3"><img src="../icons/addproduct.png" class="imgAddProduct" id="imgShow3"></label>
+                <label class="showImgeitem" for="clickInpu4"><img src="../icons/addproduct.png" class="imgAddProduct" id="imgShow4"></label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu1">إضافة الصورة الاولى</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu2">إضافة الصورة التانية</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu3">إضافة الصورة الثالتة</label>
+            </div>
+            <div class="putImage">
+                <label class="putImage_center" for="clickInpu4">إضافة الصورة الرابعة</label>
+            </div>
+            <div class="placeBtn">
+                <button class="Btn" onclick="(verifierData())">إضافة منتوج</button>
+            </div>
+            <input type="file" class="clickInpu" id="clickInpu1">
+            <input type="file" class="clickInpu" id="clickInpu2">
+            <input type="file" class="clickInpu" id="clickInpu3">
+            <input type="file" class="clickInpu" id="clickInpu4">
+<<<<<<< HEAD
+            <div id="idImg1" class="showIdImg"></div>
+            <div id="idImg2" class="showIdImg"></div>
+            <div id="idImg3" class="showIdImg"></div>
+            <div id="idImg4" class="showIdImg"></div>
+=======
+>>>>>>> 70b1724af3eb6ebdfe174751cdfc5ba5a5838053
+
+        </div>
+    </div>
+</body>
+<script src="./script/addProduct.js"></script>
+</html>

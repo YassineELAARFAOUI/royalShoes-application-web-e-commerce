@@ -1,0 +1,375 @@
+@import url('../../fixed/color.css');
+@import url('../../fixed/font.css');
+body{
+    margin: 0 auto;
+    background-color: #ffdfbb;
+}
+.div_menu{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: var(--color4);
+}
+.div_icons{
+    height: 100%;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+.logo{
+    width: 100%;
+}
+.div_menu_mobile{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: var(--color4);
+}
+.return{
+    width: 30PX;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.iconReturn{
+    width: 20PX;
+    height: 20PX;
+    transform: rotate(180deg);
+}
+.Div_AboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top:50px ;
+}
+.div_description{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    font-family:var(--font1);
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(82, 81, 81);
+}
+
+
+.div_services_global{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.div_services_global_centred{
+    width: 100%;
+    max-width: 800px;
+    height:fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div_twoServices_global{
+    width: 49%;
+    height:fit-content ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.div_twoServices_unitaire{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+.div_services{
+    width: 180px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.div_icon_services{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.icon_services{
+   width: 60px;
+   height: 60px;
+}
+.div_nameService{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 17px;
+    direction: rtl;
+}
+.div_title_localisation{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.div_localisation_global{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_localisation_unitaire{
+    width: 90% ;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map_localisation{
+    width: 800px;
+    height: 400px;
+    border-radius: 8px;
+}
+.div_global_socialMedia{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.div_global_socialMedia_centree{
+    width: fit-content;
+    height:fit-content ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_icon_socialMedia{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_socialMedia{
+    width: 40px;
+    height: 40p
+}
+
+
+
+
+.div_footer_info{
+    width: 100%;
+    height: fit-content;
+    background-color:var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_footer_info_forThree_div_global{
+    width: 95%;
+    height: fit-content;
+}
+.div_footer_info_forThree_div_globalCenter{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.div_info_unitaire{
+    width: 270px;
+    height: fit-content;
+    font-size: 16px;
+    font-family: var(--font1);
+    color: var(--color2);
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+
+}
+
+.div_title_typesOfchaussures{
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.div_names_element{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_items{
+    width: 100%;
+    height: fit-content;
+   
+
+}
+.item_fotter_Acessoires{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.copyright{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--font1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+}
+.iconCopyright{
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 4px;
+    margin-right: 4px;
+    color: var(--color1);
+}
+.link_fotter{
+    color: var(--color2);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* web */
+@media all and (min-width:800px) {
+    .div_services:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    .link_fotter:hover{
+        text-decoration: underline;
+    }
+    .icon_socialMedia:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+  
+}
+
+
+
+
+
+
+/* mobile */
+@media all and (max-width:800px) {
+    .return{
+        display: flex;
+    }
+    .div_input_unitaire{
+        width: 90%;
+    }
+    .div_services_global_centred{
+        width: 90%;
+        height:fit-content;
+        display: block;
+    }
+    .div_twoServices_global{
+        width: 100%;
+       margin-top: 10px;
+    }
+    .div_footer_info_forThree_div_globalCenter{
+        display: block;
+    }
+    .div_title_typesOfchaussures,.item_fotter_Acessoires{
+        display: block;
+    }
+    .div_info_unitaire{
+        margin-top: 20px;
+    }
+  
+}
+
+/* mobile */
+@media all and (max-width:590px) {
+    .div_description{
+        width: 80%;
+        height: fit-content;
+        font-size: 17px;
+        overflow: none;
+    }
+}
+/* mobile */
+@media all and (max-width:450px) {
+    .div_description{
+        width: 80%;
+        height: fit-content;
+        font-size: 17px;
+        overflow: none;
+    }
+    .div_services_global_centred{
+        width: 100%;
+        max-width: none;
+    }
+    .div_services{
+        width: 140px;
+        height: 155px;
+        margin-right: 10px;
+    }
+    .div_nameService{
+        height: fit-content;  
+        font-size: 13px;
+    }
+    .icon_services{
+        width: 40px;
+        height: 40px;
+     }
+     .div_icon_socialMedia{
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    } 
+    .icon_socialMedia{
+        width: 35px;
+        height: 35px;
+    }
+    
+}

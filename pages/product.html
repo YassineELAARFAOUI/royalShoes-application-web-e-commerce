@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتوج</title>
+    <link rel="stylesheet" href="./style/product.css">
+    <link rel="icon" href="../logo/logo_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="div_menu">
+        <a class="return" href="../index.html">
+            <img src="../icones/goRight.png" class="iconReturn">
+        </a>
+        <div class="div_icons">
+          <img class="logo" src="../logo/logo.png" alt="">
+        </div>
+    </div>
+    <div class="imagesPlaceAndDescriptionPlace">
+        <div class="imagesPlace">
+            <div class="imagesPlace_center">
+                <div class="imagePrincipal">
+                    <img src="../products/grayImg.jpg" class="productImg" id="imP">
+                </div>
+                <div class="listImgs">
+                    <div class="imageItem"><img src="../products/grayImg.jpg" class="productImg" id="im1" onclick="changeImage('im1')"></div>
+                    <div class="imageItem"><img src="../products/grayImg.jpg" class="productImg" id="im2" onclick="changeImage('im2')"></div>
+                    <div class="imageItem"><img src="../products/grayImg.jpg" class="productImg" id="im3" onclick="changeImage('im3')"></div>
+                    <div class="imageItem"><img src="../products/grayImg.jpg" class="productImg" id="im4" onclick="changeImage('im4')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="descriptionPlace">
+            <div class="description">
+                <div class="description_center" id="descriptionPlace"></div>
+            </div>
+            <div class="price priceSpaceTop">
+                <div class="price_center">
+                    <span id="priceAF"></span>
+                    <div class="unit">د.م</div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="price_center price_center_avant">
+                    <span id="priceBF"></span>
+                    <div class="unit unit_avant">د.م</div>
+                </div>
+            </div>
+            <div class="starsPlace">
+                <div class="starsPlace_center">
+                    <img src="../icones/star.png" class="starImg">
+                    <img src="../icones/star.png" class="starImg">
+                    <img src="../icones/star.png" class="starImg">
+                    <img src="../icones/star.png" class="starImg">
+                    <img src="../icones/star.png" class="starImg">
+
+                </div>
+            </div>
+            <div class="numberProductPlace">
+                <div class="starsPlace_center numberProductPlace_center">
+                    <div class="btn" onclick="addQuantite('plus')">+</div>
+                    <div class="inpPlace"><input type="number" class="inpNumberProduct" id="numberInput" value="0"></div>
+                    <div class="btn" onclick="addQuantite('moins')">-</div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="price_center placeBtnBuy">
+                    <button class="btnBuy">شراء الان</button>
+                </div>
+            </div>
+            <div class="iconsAndNamesIcon">
+                <div class="iconsAndNamesIcon_center">
+                    <div class="iconsAndNamesIcon_item">
+                        <div class="iconsAndNamesIcon_item_text">التوصيل بسرعة  </div>
+                        <div class="iconsAndNamesIcon_item_icon">
+                            <img src="../icones/livraison.png" class="icon_item">
+                        </div>
+                    </div>
+                    <div class="iconsAndNamesIcon_item">
+                        <div class="iconsAndNamesIcon_item_text">الدفع عند الاستلام</div>
+                        <div class="iconsAndNamesIcon_item_icon">
+                            <img src="../icones/paiementALaLivraison.png" class="icon_item">
+                        </div>
+                    </div>
+                    <div class="iconsAndNamesIcon_item">
+                        <div class="iconsAndNamesIcon_item_text">استرجاع المنتج في اقل من 24h</div>
+                        <div class="iconsAndNamesIcon_item_icon">
+                            <img src="../icones/routeur24.png" class="icon_item">
+                        </div>
+                    </div>
+                    <div class="iconsAndNamesIcon_item">
+                        <div class="iconsAndNamesIcon_item_text">الاتصال معنا 24h/7j</div>
+                        <div class="iconsAndNamesIcon_item_icon">
+                            <img src="../icones/contactUs.png" class="icon_item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgsShowPlace">
+                <div class="imgsShowPlace_center">
+                    <div class="imgsShowPlace_item"><img src="../products/grayImg.jpg" class="productShow" id="imShow1"></div>
+                    <div class="imgsShowPlace_item"><img src="../products/grayImg.jpg" class="productShow" id="imShow2"></div>
+                    <div class="imgsShowPlace_item"><img src="../products/grayImg.jpg" class="productShow" id="imShow3"></div>
+                    <div class="imgsShowPlace_item"><img src="../products/grayImg.jpg" class="productShow" id="imShow4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div_footer_info">
+        <div class="div_footer_info_forThree_div_global">
+            <div class="div_footer_info_forThree_div_globalCenter">
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        الشراء
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">معلومات على الشراء</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter"> التوصيل بسرعة </a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">لدفع عند الاستلام</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">استرجاع المنتج</a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        Accessoires de mode 
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les escarpins</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les bottes</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les sacs</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les pantoufles</a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        Social Media
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">FACEBOOK</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">INSTAGRAM</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">WhatsApp </a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">GMAIL</a></div>
+                        </div>
+                     </div>
+                </div>
+                
+
+            </div>
+            <div class="copyright">
+                <span class="iconCopyright">©</span> All Rights Reserved Royal Shoes
+            </div>
+            <div class="copyright">
+               By Funibia
+            </div>
+        </div>  
+    </div>
+</body>
+<script src="./script/product.js"></script>
+</html>

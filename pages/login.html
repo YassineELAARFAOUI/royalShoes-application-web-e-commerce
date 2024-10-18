@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="icon" href="../logo/logo_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="div_login">
+        <div class="login_input_global">
+            <div class="div_logo">
+              <img class="logo"  src="../logo/logo_icon.png" alt="">
+            </div>
+            <div class="div_input_global messageInfo">
+                <div class="div_input_unitaire messageInfo_center" id="addMessage"></div> 
+            </div>
+            <div class="div_input_global">
+               <div class="div_input_unitaire">
+                <input class="input_login" id="username" placeholder="اسم المستخدم" type="text">
+               </div> 
+            </div>
+            <div class="div_input_global">
+                <div class="div_input_unitaire">
+                 <input class="input_login" id="password" placeholder="الرمز السري " type="password">
+                </div> 
+             </div>
+            <div class="div_button">
+                <button class="login_btn" onclick="verifierInput()">تسجيل الدخول </button>
+            </div>
+             
+        </div>
+        <div class="login_logo_global">
+            <img class="design_login" src="../illustrations/design_login.svg" >
+        </div>
+    </div>
+    
+</body>
+<script src="./script/login.js"></script>
+</html>

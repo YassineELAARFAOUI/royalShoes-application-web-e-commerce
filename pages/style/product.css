@@ -1,0 +1,503 @@
+@import url('../../fixed/color.css');
+@import url('../../fixed/font.css');
+body{
+    margin: 0 auto;
+    background-color: var(--color3);
+}
+.div_menu{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: var(--color4);
+}
+.div_icons{
+    height: 100%;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+.logo{
+    width: 100%;
+}
+.div_menu_mobile{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: var(--color4);
+}
+.return{
+    width: 30PX;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.iconReturn{
+    width: 20PX;
+    height: 20PX;
+    transform: rotate(180deg);
+}
+.imagesPlaceAndDescriptionPlace{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 20PX;
+}
+.imagesPlace{
+    width: 50%;
+    height: fit-content;
+    max-width: 550PX;
+    min-width: 510PX;
+    display: flex;
+    justify-content: center;
+}
+.descriptionPlace{
+    flex: 1;    
+    height: fit-content;
+    margin-top: 30PX;
+}
+.imagesPlace_center{
+    width: 510PX;
+    height: 400PX;
+    display: flex;
+    direction: rtl;
+}
+.imagePrincipal{
+    width: 400PX;
+    height: 400PX;
+    background-color: var(--color4);
+    border-radius: 5PX;
+    overflow: hidden;
+}
+.listImgs{
+    flex: 1;
+    height: 100%;
+    margin-right: 10PX;
+    direction: ltr;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.imageItem{
+    width: 95PX;
+    height: 95PX;
+    background-color: var(--color4);
+    border-radius: 5PX;
+    overflow: hidden;
+}
+.productImg{
+    width: 100%;
+    height: 100%;
+}
+.description{
+    width: 100%;
+    height: fit-content;
+    font-family: var(--font1);
+    display: flex;
+    justify-content: center;
+}
+.description_center{
+    width: 70%;
+    height: fit-content;
+    max-width: 500PX;
+    min-width: 150PX;
+    background-color: var(--color9);
+    direction: rtl;
+    font-family: var(--font1);
+    font-size: 20PX;
+    border-radius: 6PX;
+    padding: 10PX;
+}
+.price{
+    width: 100%;
+    height: fit-content;
+    font-family: var(--font1);
+    direction: rtl;
+    font-size: 18PX;
+    display: flex;
+    justify-content: center;
+}
+.price_center{
+    width: 70%;
+    height: fit-content;
+    max-width: 500PX;
+    min-width: 150PX;
+    padding: 10PX;
+    display: flex;
+    font-size: 25PX;
+    padding-top: 0PX;
+    padding-bottom: 0PX;
+}
+.unit{
+    margin-right: 5PX;
+    font-size: 20PX;
+    margin-top: 5PX;
+}
+.price_center_avant{
+    font-size: 17PX;
+    text-decoration: line-through;
+    color: rgba(46, 46, 46, 0.614);
+}
+.unit_avant{
+    font-size: 12PX;
+    text-decoration: line-through;
+}
+.priceSpaceTop{
+    margin-top: 30PX;
+}
+.placeBtnBuy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50PX;
+}
+.btnBuy{
+    width: 80%;
+    height: 50PX;
+    border: none;
+    border-radius: 6PX;
+    box-shadow: 1PX 1PX 5PX var(--color7);
+    font-family: var(--font1);
+    font-size: 20PX;
+    font-weight: bold;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+.starsPlace{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.starsPlace_center{
+    width: 70%;
+    height: 30PX;
+    max-width: 500PX;
+    min-width: 150PX;
+    direction: rtl;
+    display: flex;
+    margin-top: 20PX;
+}
+.starImg{
+    width: 25PX;
+    height: 25PX;
+}
+.iconsAndNamesIcon{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30PX;
+}
+.iconsAndNamesIcon_center{
+    width: 70%;
+    height: fit-content;
+    max-width: 500PX;
+    min-width: 150PX;
+}
+.iconsAndNamesIcon_item{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.iconsAndNamesIcon_item_text{
+    flex: 1;
+    height: 100%;
+}
+.iconsAndNamesIcon_item_icon{
+    width: 50PX;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_item{
+    width: 30PX;
+    height: 30PX;
+}
+.iconsAndNamesIcon_item_text{
+    font-family: var(--font1);
+    font-size: 15PX;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    font-weight: bold;
+    color: var(--color4);
+}
+.imgsShowPlace{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20PX;
+}
+.imgsShowPlace_center{
+    width: fit-content;
+    height: fit-content;
+    max-width: 500PX;
+    min-width: 150PX;
+}
+.imgsShowPlace_item{
+    width: 400PX;
+    height: 400PX;
+    background-color: var(--color7);
+    border-radius: 6PX;
+    margin-top: 20PX;
+    overflow: hidden;
+}
+.productShow{
+    width: 100%;
+    height: 100%;
+}
+
+.div_footer_info{
+    width: 100%;
+    height: fit-content;
+    background-color:var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20PX;
+}
+.div_footer_info_forThree_div_global{
+    width: 95%;
+    height: fit-content;
+}
+.div_footer_info_forThree_div_globalCenter{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.div_info_unitaire{
+    width: 270px;
+    height: fit-content;
+    font-size: 16px;
+    font-family: var(--font1);
+    color: var(--color2);
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+
+}
+
+.div_title_typesOfchaussures{
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.div_names_element{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_items{
+    width: 100%;
+    height: fit-content;
+}
+.item_fotter_Acessoires{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.copyright{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--font1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+}
+.iconCopyright{
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 4px;
+    margin-right: 4px;
+    color: var(--color1);
+}
+.link_fotter{
+    color: var(--color2);
+    text-decoration: none;
+}
+.numberProductPlace{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 20PX;
+}
+.numberProductPlace_center{
+    height: 40PX;
+    margin-top: 0PX;
+    display: flex;
+}
+.btn{
+    width: 30PX;
+    height: 100%;
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: var(--color1);
+    font-size: 20PX;
+    border-radius: 5PX;
+    margin-left: 6PX;
+    user-select: none;
+}
+.inpPlace{
+    width: 60PX;
+    overflow: hidden;
+    margin-left: 6PX;
+    border-radius: 5PX;
+}
+.inpNumberProduct{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+    outline: none;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 25PX;
+    padding-right: 6PX;
+}
+.inpNumberProduct::-webkit-inner-spin-button,
+.inpNumberProduct::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+    background-color: var(--color3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 10PX;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*web*/
+@media all and (min-width:800px) {
+    .imagesPlace{
+        position: sticky;
+        top: 20PX;
+    }
+    .imagePrincipal,.imageItem,.btnBuy,.imgsShowPlace_item{
+        cursor: pointer;
+    }
+    .div_menu_mobile_items{
+        display: none;
+     }
+    .link_fotter:hover{
+        text-decoration: underline;
+    }
+    .btn{
+        cursor: pointer;
+    }
+}
+@media all and (max-width:900px) {
+    .imgsShowPlace_item{
+        width: 280PX;
+        height: 280PX;
+    }
+}
+/*mobile*/
+@media all and (max-width:800px) {
+    .return{
+        display: flex;
+    }
+    .imagesPlaceAndDescriptionPlace{
+        display: block;
+    }
+    .imagesPlace{
+        width: 100%;
+        min-width: 300PX;
+        max-width: none;
+    }
+    .imagesPlace_center{
+        width: 400PX;
+        height: 510PX;
+        display: block;
+    }
+    .listImgs{
+        flex: 1;
+        height: 100PX;
+        margin-right: 0PX;
+        margin-top: 10PX;
+    }
+    .price_center,.description_center,.starsPlace_center,.iconsAndNamesIcon_center{
+        max-width: 350PX;
+        min-width: 250PX;
+    }
+    .btnBuydescriptionPlace{
+        margin-top: 20PX;
+    }
+    .imgsShowPlace_item{
+        width: 400PX;
+        height: 400PX;
+    }
+    .div_footer_info_forThree_div_globalCenter{
+        display: block;
+    }
+    .div_title_typesOfchaussures,.item_fotter_Acessoires{
+        display: block;
+    }
+    .div_info_unitaire{
+        margin-top: 20px;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+@media all and (max-width:400px) {
+    .imagesPlace_center{
+        width: 300PX;
+        height: fit-content;
+    }
+    .imagePrincipal{
+        width: 300PX;
+        height: 300PX;
+    }
+    .imageItem{
+        width: 70PX;
+        height: 70PX;
+    }
+    .listImgs{
+        height: 70PX;
+    }
+    .imgsShowPlace_item{
+        width: 300PX;
+        height: 300PX;
+    }
+}

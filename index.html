@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="icon" href="./logo/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="div_menu">
+      <div class="div_icons">
+        <img class="logo" src="./logo/logo.png" alt="">
+      </div>
+      <div class="div_menu_items">
+        <div class="div_menu_items_unitaire" onclick="goHome()">
+            الصفحة الرئيسية
+        </div>
+        <div class="div_menu_items_unitaire">
+            المنتجات
+        </div>
+        <div class="div_menu_items_unitaire">
+            الصنف
+        </div>
+        <div class="div_menu_items_unitaire">
+            تواصل معنا 
+        </div>
+        <a class="div_menu_items_unitaire" href="./pages/aboutus.html">
+            المزيد  
+        </a>
+        <div class="div_menu_items_unitaire" onclick="goLogin()">
+            <div class="iconeCompte"><img src="./icones/compte.png" class="iconeImageCompte"></div> 
+        </div>
+      </div>
+    </div>
+    <div class="div_menu_mobile">
+      <div class="div_icons">
+        <img class="logo" src="./logo/logo.png" alt="">
+      </div>
+      <div class="div_menu_items">
+        <button class="btn_menu" id="btn_menu" onclick="openCloseMenu()">
+          <img src="./icones/menu.png" class="icone">
+        </button>
+      </div>
+    </div>
+    <div class="div_menu_mobile_items" id="menu_list_mobile">
+       <div class="div_item menuItemPlace" onclick="goHome()">
+          <div class="item_name">الصفحة الرئيسية </div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/home.png" >
+          </div>
+       </div>
+        <div class="div_item menuItemPlace">
+          <div class="item_name">المنتجات  </div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/product.png" >
+          </div>
+       </div>
+       <div class="div_item menuItemPlace">
+          <div class="item_name">الصنف </div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/categorie.png">
+          </div>
+       </div>
+       <div class="div_item menuItemPlace">
+          <div class="item_name">تواصل معنا</div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/contact-us.png" >
+          </div>
+       </div>
+       <div class="div_item menuItemPlace">
+          <div class="item_name">المزيد  </div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/more-info.png" >
+          </div>
+       </div>
+       <div class="div_item menuItemPlace" onclick="goLogin()">
+          <div class="item_name">الحساب</div>
+          <div class="icon_item">
+              <img class="logo_icone_item" src="./icones/compte.png" >
+          </div>
+       </div>
+
+    </div>
+    <div id="bodyWeb">
+      <div class="sliderPlace">
+        <div class="sliderPlace_center">
+          <img src="./sliderImages/img1.jpg" class="imgSlider" id="imgSlider">
+          <div class="btnSlider btnSliderLeft" id="btnLeft">
+            <img src="./icones/goRight.png" class="iconeBtnSlider iconeBtnSliderLeft">
+          </div>
+          <div class="btnSlider" id="btnRight">
+            <img src="./icones/goRight.png" class="iconeBtnSlider">
+          </div>
+        </div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les chaussure :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allchaussure"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les eges :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="alleges"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les bottes :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allbottes"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les spadriers :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allspadriers"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les sacs :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allsacs"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les sabots :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allsabots"></div>
+      </div>
+      <div class="title_Product">
+        <div class="title_Product_center">Les pantoufles :</div>
+      </div>
+      <div class="div_product_global">
+        <div class="div_product_global_second" id="allpantoufles"></div>
+      </div>
+      <div class="div_footer_info">
+        <div class="div_footer_info_forThree_div_global">
+            <div class="div_footer_info_forThree_div_globalCenter">
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        الشراء
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">معلومات على الشراء</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter"> التوصيل بسرعة </a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">لدفع عند الاستلام</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">استرجاع المنتج</a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        Accessoires de mode 
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les escarpins</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les bottes</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les sacs</a></div>
+                            <div class="item_fotter_Acessoires"><a href="#" class="link_fotter">Les pantoufles</a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="div_info_unitaire">
+                    <div class="div_title_typesOfchaussures">
+                        Social Media
+                    </div>
+                     <div class="div_names_element">
+                        <div class="div_items">
+                            
+                            <div class="item_fotter_Acessoires"><a href="https://www.facebook.com/people/Royal-Shoes/61552837242830/" class="link_fotter">FACEBOOK</a></div>
+                            <div class="item_fotter_Acessoires"><a href="https://www.instagram.com/royal.shoes568/?igshid=YTQwZjQ0NmI0OA%3D%3D" class="link_fotter">INSTAGRAM</a></div>
+                            <div class="item_fotter_Acessoires"><a href="https://wa.me/663517999" class="link_fotter">WhatsApp </a></div>
+                            <div class="item_fotter_Acessoires"><a href="mailto:khalid@gmail.com" class="link_fotter">GMAIL</a></div>
+                        </div>
+                     </div>
+                </div>
+                
+
+            </div>
+            <div class="copyright">
+                <span class="iconCopyright">©</span> All Rights Reserved Royal Shoes
+            </div>
+            <div class="copyright">
+               By Funibia
+            </div>
+        </div>
+        
+      </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

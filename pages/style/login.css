@@ -1,0 +1,131 @@
+@import url('../../fixed/color.css');
+@import url('../../fixed/font.css');
+body{
+    margin: 0 auto;
+    background: linear-gradient(30deg , var(--color10), #ffff);
+    background-attachment: fixed;
+}
+.div_login{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.login_input_global{
+    width: 50%;
+    height: 100%;
+    margin-top: 150px;
+}
+.div_input_global{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+.div_input_unitaire{
+    width: 90%;
+    max-width: 500px;
+    height: 95%;
+    background-color:var(--color1);
+    padding-right: 10px;
+    border-radius: 6px;
+    background-color: var(--color1);
+}
+.input_login{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0px;
+    direction:rtl;
+    background-color: rgba(255, 235, 205, 0);
+    font-family: var(--font1);
+}
+.div_button{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.login_btn{
+    width: 60%;
+    max-width: 350px;
+    min-width: 250px;
+    height: 50px;   
+    border-radius: 4px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--color2);
+    box-shadow: 1PX 1PX 8PX rgba(0, 0, 0, 0.24);
+}
+
+.login_logo_global{
+    width: 50%;
+    height: fit-content;
+}
+.div_logo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.design_login{
+    margin-top: 50px;
+    width: 80%;
+    max-width: 600px;
+}
+.messageInfo{
+    height: fit-content;
+}
+.messageInfo_center{
+    background-color: #ffffff00;
+    direction: rtl;
+    color: red;
+    font-family: var(--font1);
+    font-size: 12PX;
+}
+
+
+
+
+@media all and (max-width:1000px) {
+    .design_login{
+        margin-top: 200px;
+    }
+    
+}
+    
+/* mobile */
+@media all and (max-width:800px) {
+    body{
+        background-color: var(--color9);
+    }
+    .login_logo_global{
+        display: none;
+    }
+    .login_input_global{
+        width: 100%;
+    }
+    
+}
+
+/* web */
+@media all and (min-width:800px) {
+    .login_btn{
+        cursor: pointer;
+    }
+}
